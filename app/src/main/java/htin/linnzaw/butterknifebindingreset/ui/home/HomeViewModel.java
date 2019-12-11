@@ -4,9 +4,14 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import java.util.List;
+
+import htin.linnzaw.butterknifebindingreset.pojo.Users;
+
 public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
+    private MutableLiveData<List<Users>> users;
 
     public HomeViewModel()
     {

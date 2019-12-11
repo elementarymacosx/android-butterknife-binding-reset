@@ -26,7 +26,7 @@ public class HomeFragment extends Fragment
 
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        homeviewmodel.getText().observe(this, (s) -> textView.setText(s));
+        homeviewmodel.getText().observe(this, (s) -> textView.setText(s)); // UI Update
 
         ButterKnife.bind(this, root);
         return root;

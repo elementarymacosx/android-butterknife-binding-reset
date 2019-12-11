@@ -23,4 +23,20 @@ public class HomeViewModel extends ViewModel {
     {
         return mText;
     }
+
+    public LiveData<List<Users>> getUsers()
+    {
+        if (users == null)
+        {
+            users = new MutableLiveData<>();
+            loadUsers();
+            return users;
+        }
+        return users;
+    }
+
+    private void loadUsers()
+    {
+
+    }
 }
